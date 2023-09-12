@@ -1,0 +1,2452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Olx</title>
+  </head>
+  <body>
+    <nav class="navbar bg-light">
+      <div
+        class="container"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/olx_logo.png"
+            alt="Bootstrap"
+            width="45"
+            height="28"
+          />
+          <input
+            type="search"
+            list="cities"
+            style="
+              display: inline-flex;
+              padding: 5px;
+              align-items: center;
+              height: 48px;
+              width: 272px;
+              max-height: 320px;
+              overflow: unset;
+              z-index: 6;
+              font-size: medium;
+              margin-left: 10px;
+              border: 2px solid #002f34;
+              border-radius: 4px;
+            "
+            placeholder="India"
+          />
+          <datalist id="cities">
+            <option value="Pune">Pune</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Satara">Satara</option>
+          </datalist>
+          <input
+            type="serch"
+            placeholder="Find Cars,Mobile Phones and more..."
+            style="
+              box-sizing: border-box;
+              border-radius: 4px 0 0 4px;
+              border: 2px solid #002f34;
+              display: inline-flex;
+              width: 100%;
+              margin-left: 16px;
+              height: 48px;
+              font-size: medium;
+            "
+          />
+        </a>
+
+        <div
+          class="message"
+          style="
+            display: block;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 200px;
+          "
+        >
+          <i
+            class="fa-regular fa-comment"
+            style="font-size: 22px; cursor: pointer; display: inline-block"
+          ></i>
+          <i
+            class="fa-regular fa-bell"
+            style="font-size: 22px; cursor: pointer; display: inline-block"
+          ></i>
+        </div>
+
+        <div class="selling_page">
+          <button
+            style="
+              border-style: solid;
+              border-width: 5px;
+              border-top-color: #23e5db;
+              border-left-color: #ffce32;
+              border-right-color: #3a77ff;
+              border-bottom-color: #3a77ff;
+              font-size: 15px;
+              cursor: pointer;
+              padding: 6px 12px;
+              border-radius: 30px;
+              background-color: white;
+              color: black;
+              display: inline-flex;
+            "
+          >
+            <i
+              class="fa-solid fa-plus"
+              style="margin: auto; padding: 5px; font-size: larger"
+            ></i>
+            <p style="margin: auto; font-weight: bold">SELL</p>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <hr />
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div
+        class="container text-black"
+        style="
+          font-size: small;
+          font-family: Roboto, Arial, Helvetica, sans-serif;
+        "
+      >
+        <li class="nav-item dropdown list-unstyled mx-2">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="font-weight: bold"
+          >
+            ALL CATEGORIES
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Cars </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Motorcycles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mobile Phones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">For Sale: Houses & Apartments </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OLX Renew (Mobile)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Scooters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Commercial & Other Vehicles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">For Rent: Houses & Apartments</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar End -->
+
+    <div class="banner">
+      <img
+        style="width: 1520px; height: 135px"
+        src="https://statics.olx.in/olxin/banners/hero_bg_in_v3@1x.png"
+        alt=""
+      />
+    </div>
+
+    <!-- banner end -->
+
+    <div
+      class="ad_img"
+      style="
+        width: 800px;
+        margin: auto;
+        margin-top: 35px;
+        height: 200px;
+        position: relative;
+      "
+    >
+      <img
+        style="
+          width: 800px;
+          position: relative;
+          z-index: 1;
+          border: 1px solid black;
+        "
+        src="assets/ad1.jpg"
+        alt=""
+      />
+      <i
+        style="
+          border: none;
+          position: absolute;
+          top: 0%;
+          right: 0%;
+          z-index: 2;
+          cursor: pointer;
+          background-color: white;
+          color: #00aecd;
+          border-color: #002f34;
+        "
+        class="fa-regular fa-rectangle-xmark"
+        id="adicon"
+      ></i>
+    </div>
+
+    <!-- add End -->
+
+    <div class="container-fluid py-5">
+      <div
+        class="container"
+        style="
+          background-color: #ebeeef;
+          border-radius: 4px;
+          height: 400px;
+          width: 100%;
+        "
+        data-aut-id="bundles_last_search"
+      >
+        <div
+          class="container-headline py-2"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            font-size: larger;
+          "
+        >
+          <span>Based on your last search</span>
+          <button
+            type="button"
+            data-aut-id="rui-39-wj rui-3-PNI rui-2K0j9"
+            style="
+              border-style: none;
+              background: none;
+              font-weight: bold;
+              font-size: medium;
+              cursor: pointer;
+              line-height: normal;
+              text-decoration: underline;
+            "
+          >
+            <span style="color: #002f34">View more</span>
+          </button>
+        </div>
+        <div
+          class="product"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px 10px 10px 10px;
+            margin-top: 10px;
+          "
+        >
+          <div class="first_row" style="display: inline-block">
+            <div
+              class="box"
+              style="
+                border: 1px solid rgb(197, 196, 196);
+                width: 260px;
+                height: 266px;
+                cursor: pointer;
+                border-radius: 4px;
+              "
+            >
+              <a href="#"></a>
+              <img src="assets/product-4.jpg" alt="" style="width: 250px" />
+              <h2
+                style="
+                  font-size: 700;
+                  margin-bottom: 0;
+                  color: #002f34;
+                  font-size: 20px;
+                  margin-left: 5px;
+                  z-index: 2;
+                  position: relative;
+                  font-weight: bold;
+                "
+              >
+                ₹ 10,50,000
+              </h2>
+              <h3
+                style="
+                  font-size: 14px;
+                  color: #002f34;
+                  margin: 2px 0 0;
+                  margin-left: 5px;
+                  margin-top: 5px;
+                "
+              >
+                2018 - 65888.0 km
+              </h3>
+              <p
+                style="
+                  margin-left: 5px;
+                  color: #6f6f6f;
+                  font-weight: 400;
+                  margin-top: 5px;
+                  font-size: 14px;
+                "
+              >
+                Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+              </p>
+              <div
+                class="address_data"
+                style="
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: space-between;
+                  color: rgba(0, 47, 52, 0.64);
+                  font-family: Roboto, Arial, Helvetica, sans-serif;
+                  line-height: 1.15;
+                "
+              >
+                <p
+                  style="
+                    font-size: 11px;
+                    margin-right: 101px;
+                    margin-left: 5px;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                  "
+                >
+                  Paschim Vihar, Delhi
+                </p>
+                <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                  Today
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="first_row" style="display: inline-block">
+            <div
+              class="box"
+              style="
+                border: 1px solid rgb(197, 196, 196);
+                width: 260px;
+                height: 266px;
+                cursor: pointer;
+                border-radius: 4px;
+              "
+            >
+              <a href="#"></a>
+              <img src="assets/product-2.jpg" alt="" style="width: 250px" />
+              <h2
+                style="
+                  font-size: 700;
+                  margin-bottom: 0;
+                  color: #002f34;
+                  font-size: 20px;
+                  margin-left: 5px;
+                  z-index: 2;
+                  position: relative;
+                  font-weight: bold;
+                "
+              >
+                ₹ 10,50,000
+              </h2>
+              <h3
+                style="
+                  font-size: 14px;
+                  color: #002f34;
+                  margin: 2px 0 0;
+                  margin-left: 5px;
+                  margin-top: 5px;
+                "
+              >
+                2018 - 65888.0 km
+              </h3>
+              <p
+                style="
+                  margin-left: 5px;
+                  color: #6f6f6f;
+                  font-weight: 400;
+                  margin-top: 5px;
+                  font-size: 14px;
+                "
+              >
+                Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+              </p>
+              <div
+                class="address_data"
+                style="
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: space-between;
+                  color: rgba(0, 47, 52, 0.64);
+                  font-family: Roboto, Arial, Helvetica, sans-serif;
+                  line-height: 1.15;
+                "
+              >
+                <p
+                  style="
+                    font-size: 11px;
+                    margin-right: 101px;
+                    margin-left: 5px;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                  "
+                >
+                  Paschim Vihar, Delhi
+                </p>
+                <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                  Today
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="first_row" style="display: inline-block">
+            <div
+              class="box"
+              style="
+                border: 1px solid rgb(197, 196, 196);
+                width: 260px;
+                height: 266px;
+                cursor: pointer;
+                border-radius: 4px;
+              "
+            >
+              <a href="#"></a>
+              <img src="assets/product-3.jpg" alt="" style="width: 250px" />
+              <h2
+                style="
+                  font-size: 700;
+                  margin-bottom: 0;
+                  color: #002f34;
+                  font-size: 20px;
+                  margin-left: 5px;
+                  z-index: 2;
+                  position: relative;
+                  font-weight: bold;
+                "
+              >
+                ₹ 10,50,000
+              </h2>
+              <h3
+                style="
+                  font-size: 14px;
+                  color: #002f34;
+                  margin: 2px 0 0;
+                  margin-left: 5px;
+                  margin-top: 5px;
+                "
+              >
+                2018 - 65888.0 km
+              </h3>
+              <p
+                style="
+                  margin-left: 5px;
+                  color: #6f6f6f;
+                  font-weight: 400;
+                  margin-top: 5px;
+                  font-size: 14px;
+                "
+              >
+                Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+              </p>
+              <div
+                class="address_data"
+                style="
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: space-between;
+                  color: rgba(0, 47, 52, 0.64);
+                  font-family: Roboto, Arial, Helvetica, sans-serif;
+                  line-height: 1.15;
+                "
+              >
+                <p
+                  style="
+                    font-size: 11px;
+                    margin-right: 101px;
+                    margin-left: 5px;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                  "
+                >
+                  Paschim Vihar, Delhi
+                </p>
+                <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                  Today
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="first_row" style="display: inline-block">
+            <div
+              class="box"
+              style="
+                border: 1px solid rgb(197, 196, 196);
+                width: 260px;
+                height: 266px;
+                cursor: pointer;
+                border-radius: 4px;
+              "
+            >
+              <a href="#"></a>
+              <img src="assets/product-1.jpg" alt="" style="width: 250px" />
+              <h2
+                style="
+                  font-size: 700;
+                  margin-bottom: 0;
+                  color: #002f34;
+                  font-size: 20px;
+                  margin-left: 5px;
+                  z-index: 2;
+                  position: relative;
+                  font-weight: bold;
+                "
+              >
+                ₹ 10,50,000
+              </h2>
+              <h3
+                style="
+                  font-size: 14px;
+                  color: #002f34;
+                  margin: 2px 0 0;
+                  margin-left: 5px;
+                  margin-top: 5px;
+                "
+              >
+                2018 - 65888.0 km
+              </h3>
+              <p
+                style="
+                  margin-left: 5px;
+                  color: #6f6f6f;
+                  font-weight: 400;
+                  margin-top: 5px;
+                  font-size: 14px;
+                "
+              >
+                Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+              </p>
+              <div
+                class="address_data"
+                style="
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: space-between;
+                  color: rgba(0, 47, 52, 0.64);
+                  font-family: Roboto, Arial, Helvetica, sans-serif;
+                  line-height: 1.15;
+                "
+              >
+                <p
+                  style="
+                    font-size: 11px;
+                    margin-right: 101px;
+                    margin-left: 5px;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                  "
+                >
+                  Paschim Vihar, Delhi
+                </p>
+                <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                  Today
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mid-slider end -->
+
+    <div class="container">
+      <div class="clones" style="display: block">
+        <div
+          class="item"
+          style="
+            font-size: 24px;
+            margin: 0 0 8px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            display: block;
+          "
+        >
+          <span>Fresh recommendations</span>
+        </div>
+      </div>
+      <div class="product">
+        <div
+          class="First_row"
+          style="
+            display: flex;
+            justify-content: space-evenly;
+            width: 1200px;
+            margin: auto;
+            margin-top: 35px;
+          "
+        >
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-1.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-2.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-3.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-4.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="First_row"
+          style="
+            display: flex;
+            justify-content: space-evenly;
+            width: 1200px;
+            margin: auto;
+            margin-top: 35px;
+          "
+        >
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-5.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-6.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-7.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-8.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="First_row"
+          style="
+            display: flex;
+            justify-content: space-evenly;
+            width: 1200px;
+            margin: auto;
+            margin-top: 35px;
+          "
+        >
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-9.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-10.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-5.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-6.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="First_row"
+          style="
+            display: flex;
+            justify-content: space-evenly;
+            width: 1200px;
+            margin: auto;
+            margin-top: 35px;
+          "
+        >
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-8.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-2.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-4.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-8.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="First_row"
+          style="
+            display: flex;
+            justify-content: space-evenly;
+            width: 1200px;
+            margin: auto;
+            margin-top: 35px;
+          "
+        >
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-10.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-11.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-12.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+          <div
+            class="box"
+            style="
+              border: 1px solid rgb(197, 196, 196);
+              width: 260px;
+              height: 266px;
+              cursor: pointer;
+              border-radius: 4px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: black"></a>
+            <img style="width: 250px" src="assets/product-13.jpg" alt="" />
+            <h2
+              style="
+                font-size: 700;
+                margin-bottom: 0;
+                color: #002f34;
+                font-size: 20px;
+                margin-left: 5px;
+                z-index: 2;
+                position: relative;
+                font-weight: bold;
+              "
+            >
+              ₹ 10,50,000
+            </h2>
+            <h3
+              style="
+                font-size: 14px;
+                color: #002f34;
+                margin: 2px 0 0;
+                margin-left: 5px;
+                margin-top: 5px;
+              "
+            >
+              2018 - 65888.0 km
+            </h3>
+            <p
+              style="
+                margin-left: 5px;
+                color: #6f6f6f;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 14px;
+              "
+            >
+              Hyundai Creta 1.6 CRDi SX, 2018, Diesel
+            </p>
+            <div
+              class="address_data"
+              style="
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                color: rgba(0, 47, 52, 0.64);
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+              "
+            >
+              <p
+                style="
+                  font-size: 11px;
+                  margin-right: 101px;
+                  margin-left: 5px;
+                  font-size: 10px;
+                  text-transform: uppercase;
+                "
+              >
+                Paschim Vihar, Delhi
+              </p>
+              <p style="margin-left: 2px; font-size: 11px; margin-right: 5px">
+                Today
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product clone end -->
+
+    <div
+      class="btnhead"
+      style="display: inline-block; text-align: center; width: 100%"
+    >
+      <div
+        class="_38O09"
+        style="display: inline-block; text-align: center; margin-top: 20px"
+      >
+        <button
+          type="button"
+          data-aut-id="btnLoadMore"
+          class="rui-39-wj rui-3evoE rui-1JPTg"
+          style="
+            color: #002f34;
+            border-radius: 4px;
+            border: 2px solid #002f34;
+            padding: 0 10px;
+            font-size: 16px;
+            height: 48px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            font-weight: bold;
+            background-color: #fff;
+          "
+        >
+          <span>Load more</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- button End -->
+
+    <div
+      class="ad_img"
+      style="
+        width: 800px;
+        margin: auto;
+        margin-top: 35px;
+        height: 200px;
+        position: relative;
+      "
+    >
+      <img
+        style="
+          width: 800px;
+          position: relative;
+          z-index: 1;
+          border: 1px solid black;
+        "
+        src="assets/ad2.jpg"
+        alt=""
+      />
+      <i
+        style="
+          border: none;
+          position: absolute;
+          top: 0%;
+          right: 0%;
+          z-index: 1;
+          cursor: pointer;
+          background-color: white;
+          color: #00aecd;
+          border-color: #002f34;
+        "
+        class="fa-regular fa-rectangle-xmark"
+        id="adicon"
+      ></i>
+    </div>
+
+    <!-- ads End -->
+
+    <div class="download_app" style="background-color: #f7f8f9">
+      <div
+        class="download"
+        style="
+          margin: 100px 0 0 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <img
+          src="assets/footar.jpg"
+          class="images"
+          style="width: 400px"
+          alt=""
+        />
+
+        <div class="text" style="border-right: 2px solid #cacdce">
+          <h1 style="padding: 20px 20px 10px 20px; font-size: 35px">
+            TRY THE OLX APP
+          </h1>
+          <p style="padding: 10px 20px 20px 10px; font-size: 20px">
+            Buy, sell and find just about anything using <br />the app on your
+            mobile.
+          </p>
+        </div>
+        <div class="download_store" style="padding-left: 30px">
+          <p
+            style="
+              padding: 20px 20px 20px 0;
+              font-weight: bold;
+              font-size: 17px;
+            "
+          >
+            GET YOUR APP TODAY
+          </p>
+          <img
+            style="width: 140px; padding-left: 20px; cursor: pointer"
+            src="assets/play store.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- download app -->
+
+    <div class="main_footer" style="background-color: #ebeeef">
+      <div
+        class="footer"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 1200px;
+          margin: auto;
+        "
+      >
+        <div class="footer_box">
+          <h2
+            style="
+              font-weight: 700;
+              font-size: 14px;
+              color: #002f34;
+              margin: 10px 0 15px 0;
+            "
+          >
+            POPULAR LOCATIONS
+          </h2>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Kolkata</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Mumbai</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Chennai</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Pune</p>
+        </div>
+        <div class="footer_box">
+          <h2 style="font-weight: 700; font-size: 14px; color: #002f34">
+            TRENDING LOCATIONS
+          </h2>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Bhubaneshwar</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Hyderabad</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Chandigarh</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Nashik</p>
+        </div>
+        <div class="footer_box">
+          <h2
+            style="
+              font-weight: 700;
+              font-size: 14px;
+              color: #002f34;
+              margin: 10px 0 15px 0;
+            "
+          >
+            ABOUT US
+          </h2>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">About OLX Group</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Careers</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Contact Us</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">OLXPeople</p>
+        </div>
+        <div class="footer_box">
+          <h2
+            style="
+              font-weight: 700;
+              font-size: 14px;
+              color: #002f34;
+              margin-top: 10px 0 15px 0;
+            "
+          >
+            OLX
+          </h2>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Help</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Sitemap</p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">
+            Legal & Privacy information
+          </p>
+          <p style="margin: 8px 0 8px 0; cursor: pointer">Blog</p>
+        </div>
+        <section class="footer_subscribe" style="display: flex">
+          <div class="head">
+            <span
+              style="
+                color: #002f34;
+                display: block;
+                text-transform: uppercase;
+                font-weight: 700;
+                align-items: center;
+                margin-top: 10px 0 15px 0;
+              "
+              >Follow Us</span
+            >
+            <div class="icon">
+              <img src="assets/facebook.png" alt="" />
+              <img src="assets/twitter.png" alt="" />
+              <img src="assets/youtube.png" alt="" />
+              <img src="assets/linkedin.png" alt="" />
+            </div>
+            <div class="">
+              <img
+                src="assets/play store.png"
+                alt=""
+                style="
+                  width: 100px;
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-top: 50px;
+                  margin-bottom: 5px;
+                "
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- footer End -->
+
+    <div
+      class="end_line"
+      style="
+        display: block;
+
+        background-color: #002f34;
+        padding: 16px 0;
+        color: #fff;
+        font-size: 12px;
+      "
+    >
+      <div
+        class=""
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        "
+      >
+        <section>
+          Other Countries Pakistan - South Africa - Indonesia
+          <span></span>
+        </section>
+        <section>All rights reserved © 2006-2022 OLX</section>
+      </div>
+    </div>
+
+    <script>
+      let Eng_tag = Document.getElementById("Eng_tag");
+      let hin_eng = document.querySelector("hin_eng");
+      let language = document.querySelector("language");
+
+      language.addEventListener("click", () => {
+        hin_eng.classList.toggle("display_div");
+      });
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
